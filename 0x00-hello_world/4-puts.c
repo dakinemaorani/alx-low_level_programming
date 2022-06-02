@@ -1,6 +1,9 @@
 #include <stdio.h>
 
-/* prints a string using puts function*/
+/**
+prints a string using puts function
+Return 0 if success
+*/
 
 int main(void)
 {
