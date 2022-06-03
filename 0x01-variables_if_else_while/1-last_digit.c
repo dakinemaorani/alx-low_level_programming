@@ -3,19 +3,28 @@
 #include <stdio.h>
 
 /**
- *main description - prints last digit of number and whether it is greater than 5, 0, less than 6*/
+ *main - prints last digit of number and whether it is greater than 5, 0, less than 6.
+ *
+ *Return 0
+ */
 
-int main(void){
+int main(void)
+{
   int n;
 
   srand(time(0));
   n = rand() - RAND_MAX /2;
-
-  if((n % 10) > 5){
-    printf("Last digit of %d is %d and is greater than5\n", n, n%10);}
-  else if((n % 10) == 0){
-    printf("Last digit of %d is %d and is 0\n", n, n%10);}
-  else if((n%10)<6 && (n%10) != 0){
-    printf("Last digit of %d is %d and is less than 6 and not 0\n", n, n%10);}
+  if((n % 10) > 5)
+    {
+      printf("Last digit of %d is %d and is greater than5\n", n, n%10);
+    }
+  else if((n % 10) == 0)
+    {
+      printf("Last digit of %d is %d and is 0\n", n, n%10);
+    }
+  else if((n%10)<6 && (n%10) != 0)
+    {
+      printf("Last digit of %d is %d and is less than 6 and not 0\n", n, n%10);
+    }
   return(0);
 }
