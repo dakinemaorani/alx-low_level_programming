@@ -1,0 +1,1 @@
+0 - prints the string _putchar followed by a new line
